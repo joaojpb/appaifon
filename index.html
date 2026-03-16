@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista To-Do Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Minha Lista To-Do</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Adicionar nova tarefa..." autocomplete="off" required>
+                <div class="weekdays" id="weekdays">
+                    <div class="weekday" data-day="0">Dom</div>
+                    <div class="weekday" data-day="1">Seg</div>
+                    <div class="weekday" data-day="2">Ter</div>
+                    <div class="weekday" data-day="3">Qua</div>
+                    <div class="weekday" data-day="4">Qui</div>
+                    <div class="weekday" data-day="5">Sex</div>
+                    <div class="weekday" data-day="6">Sáb</div>
+                </div>
+                <button type="submit">Adicionar</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <span>Feito com ❤️ para seu iPhone</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
